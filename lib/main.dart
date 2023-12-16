@@ -11,11 +11,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter SPA',
+      title: 'AI Prompt Builder',
+      debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
-        '/': (context) => MidjourneyPage(),
-        '/midjourney': (context) => MidjourneyPage(),
+        '/': (context) => const MidjourneyPage(),
+        '/midjourney': (context) => const MidjourneyPage(),
         '/chatgpt': (context) => ChatGPTPage(),
         '/settings': (context) => SettingsPage(),
       },
