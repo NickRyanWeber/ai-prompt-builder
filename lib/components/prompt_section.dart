@@ -9,10 +9,10 @@ class PromptSection extends StatefulWidget {
   final String? suffix;
 
   @override
-  _PromptSectionState createState() => _PromptSectionState();
+  PromptSectionState createState() => PromptSectionState();
 }
 
-class _PromptSectionState extends State<PromptSection> {
+class PromptSectionState extends State<PromptSection> {
   late TextEditingController _textEditingController;
   String _prompt = '';
 

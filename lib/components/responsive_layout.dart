@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class ResponsiveLayout extends StatelessWidget {
   final Widget child;
 
-  ResponsiveLayout({required this.child});
+  const ResponsiveLayout({super.key, required this.child});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class ResponsiveLayout extends StatelessWidget {
           width = constraints.maxWidth > 1000 ? 1000 : constraints.maxWidth;
         }
 
-        return Container(
+        return SizedBox(
           width: width,
           child: child,
         );

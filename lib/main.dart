@@ -4,10 +4,12 @@ import '/screens/chatgpt_page.dart';
 import '/screens/settings_page.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -17,8 +19,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const MidjourneyPage(),
         '/midjourney': (context) => const MidjourneyPage(),
-        '/chatgpt': (context) => ChatGPTPage(),
-        '/settings': (context) => SettingsPage(),
+        '/chatgpt': (context) => const ChatGPTPage(),
+        '/settings': (context) => const SettingsPage(),
       },
     );
   }

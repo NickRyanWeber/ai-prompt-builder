@@ -11,13 +11,13 @@ class MidjourneyPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Midjourney')),
-      drawer: MyDrawer(),
-      body: Center(
+      drawer: const MyDrawer(),
+      body: const Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
             Padding(
-              padding: const EdgeInsets.only(bottom: 16.0),
+              padding: EdgeInsets.only(bottom: 16.0),
               child: ResponsiveLayout(
                 child: Center(child: PromptSection(prefix: '/imagine prompt:')),
               ),
