@@ -28,6 +28,12 @@ class MyDrawer extends StatelessWidget {
             },
           ),
           ListTile(
+            title: const Text('History'),
+            onTap: () {
+              Navigator.pushReplacementNamed(context, '/history');
+            },
+          ),
+          ListTile(
             title: const Text('Settings'),
             onTap: () {
               Navigator.pushReplacementNamed(context, '/settings');
